@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: var (--fontPrincipal);
+}
+:root{
+    --fontPrincipal: "Montserrat",sans-serif;
+    --colorPrimary: #30D158;
+    --colorSecondary: #FF453A;
+    --backgroundBody: #F2F2F7;
+    --backgroundSection:#FFFFFF;
+}
+body{
+    background-color:var(--backgroundBody) ;
+
+}
+
+main{
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 70%;
+    padding: 30px 0;
+}
+
+section{
+    padding: 25px;
+    margin: 30px 0;
+
+
+    background-color: var(--backgroundSection);
+    border: 8px;
+    box-shadow: 10px 10px 15px #00000025;
+
+}
+form{
+    height: 300px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+}
+
+.campo-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+    height: 56px;
+    text-indent: 8px;
+}
+
+
+input{
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #6d6d6d;
+    font-family: medium;
+    padding: 8px;
+
+}
+
+input ::placeholder{
+    color: #4c4c43;
+}
+
+
+input[type = "mumber"]{
+    -moz-apperance:textfield;
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: nome;
+    margin: 0;
+}
+
+button{
+    height: 30px;
+    width: 200px;
+    margin-right: 30px;
+    border: nome;
+    border-radius: 6px;
+    font-weight: medium;
+}
+
+button:hover{
+    cursor:pointer;
+    background-color: var(--colorPrimary);
+    color: var(--backgroundSection);
+}
+
+button[type="submit"]:hover{
+    background-color:#34c759;
+
+}
+
+
+table{
+    width: 100px;
+    margin: 30px;
+    border: nome;
+    border-collapse: collapse;
+
+
+}
+caption{
+    font-family: 20px;
+}
+caption,
+th{
+    text-align: left;
+}
+tbody>tr:nth-child(odd){
+    background-color: #F2F2F7;
+}
+tr{
+    height: 40px;
+
+}
+th,
+tr,
+td{
+    border-radius: nome;
+}
+
+caption,
+th,
+td{
+    padding: 15px;
+}
+
+.botao{
+    -color:var(--colorSecondary);
+    color:white;
+}
+
+.botao-tabela:hover{
+    background-color: #be4741;
+
+    
+}
