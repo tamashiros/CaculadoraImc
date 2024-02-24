@@ -8,11 +8,13 @@
 //7. renderizar o conteúdo na tela -> ok
 //8. botão limpar registros -> clear localStorage 
 
-//função responsável por chamar todas as outras e exibir o conteúdo na tela
-function rolarparalista(){
-    var listaDeUsuario = document.getElementById('lista-de-usuarios');
-    listaDeUsuario.scrollIntoView({behavior: 'smooth'});
+function rolarParaLista() {
+    var listaDeUsuarios = document.getElementById('lista-de-usuarios');
+    listaDeUsuarios.scrollIntoView({ behavior: 'smooth' });
 }
+
+
+//função responsável por chamar todas as outras e exibir o conteúdo na tela
 function calcularImc(event) {
     event.preventDefault();
 
@@ -26,6 +28,10 @@ function calcularImc(event) {
 
     cadastrarUsuario(usuarioAtt)
 
+    rolarParaLista()
+
+    // window.scrollTo(0, document.body.scrollHeight)
+    
     window.location.reload()
 }
 
