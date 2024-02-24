@@ -9,6 +9,10 @@
 //8. botão limpar registros -> clear localStorage 
 
 //função responsável por chamar todas as outras e exibir o conteúdo na tela
+function rolarparalista(){
+    var listaDeUsuario = document.getElementById('lista-de-usuarios');
+    listaDeUsuario.scrollIntoView({behavior: 'smooth'});
+}
 function calcularImc(event) {
     event.preventDefault();
 
